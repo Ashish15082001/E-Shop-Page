@@ -1,17 +1,17 @@
 import {
-  NavbarNavigation,
-  NavbarNavigations,
-  NavbarNavigationsContainer,
+  StyledNavbarNavigation,
+  StyledNavbarNavigations,
+  StyledNavbarNavigationsContainer,
 } from "./NavbarStyles";
 
 export default function Navbar() {
   return (
-    <NavbarNavigationsContainer>
-      <NavbarNavigations>
-        <NavbarNavigation>Men</NavbarNavigation>
-        <NavbarNavigation>Women</NavbarNavigation>
-        <NavbarNavigation>Kids</NavbarNavigation>
-      </NavbarNavigations>
-    </NavbarNavigationsContainer>
+    <StyledNavbarNavigationsContainer>
+      <StyledNavbarNavigations>
+        <StyledNavbarNavigation>Men</StyledNavbarNavigation>
+        <StyledNavbarNavigation>Women</StyledNavbarNavigation>
+        <StyledNavbarNavigation>Kids</StyledNavbarNavigation>
+      </StyledNavbarNavigations>
+    </StyledNavbarNavigationsContainer>
   );
 }

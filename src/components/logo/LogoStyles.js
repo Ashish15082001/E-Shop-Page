@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const LogoContainer = styled.div``;
+export const StyledLogoContainer = styled.div``;
 
-export const LogoText = styled.h5`
+export const StyledLogoText = styled.h5`
   font-size: var(--font-large);
   font-weight: var(--font-bold);
 `;
 
-export const LogoTextHighlight = styled.span`
+export const StyledLogoTextHighlight = styled.span`
   color: orange;
 `;

@@ -1,11 +1,15 @@
-import { LogoContainer, LogoText, LogoTextHighlight } from "./LogoStyles";
+import {
+  StyledLogoContainer,
+  StyledLogoText,
+  StyledLogoTextHighlight,
+} from "./LogoStyles";
 
 export default function Logo() {
   return (
-    <LogoContainer>
-      <LogoText>
-        <LogoTextHighlight>E-</LogoTextHighlight>Shop
-      </LogoText>
-    </LogoContainer>
+    <StyledLogoContainer>
+      <StyledLogoText>
+        <StyledLogoTextHighlight>E-</StyledLogoTextHighlight>Shop
+      </StyledLogoText>
+    </StyledLogoContainer>
   );
 }

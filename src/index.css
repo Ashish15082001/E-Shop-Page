@@ -15,10 +15,14 @@ body {
   font-size: 10px;
 
   --color-secondary: rgb(251, 255, 253);
+  --color-secondary-dark: rgb(240, 240, 240);
   --color-primary: rgb(120, 218, 166);
+  --color-primary-dark: rgb(86, 177, 128);
   --color-border-grey: rgb(219, 219, 219);
 
   --color-primary-font: rgb(61, 61, 61);
+
+  --color-black: black;
 
   --font-large: 2rem;
   --font-medium: 1.8rem;

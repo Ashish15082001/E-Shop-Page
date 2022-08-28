@@ -1,4 +1,4 @@
-export default function ShoppingCart() {
+export default function ShoppingCartIcon() {
   return (
     <svg
       width="24"

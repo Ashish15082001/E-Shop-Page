@@ -1,26 +1,26 @@
 import PersonIcon from "../../icons/PersonIcon";
 import SearchIcon from "../../icons/SearchIcon";
-import ShoppingCart from "../../icons/ShoppingCartIcon";
+import ShoppingCartIcon from "../../icons/ShoppingCartIcon";
 import {
-  IconNavbarNavigation,
-  IconNavbarNavigations,
-  IconNavbarNavigationsContainer,
+  StyledIconNavbarNavigation,
+  StyledIconNavbarNavigations,
+  StyledIconNavbarNavigationsContainer,
 } from "./IconsNavbarStyles";
 
 export default function IconsNavbar() {
   return (
-    <IconNavbarNavigationsContainer>
-      <IconNavbarNavigations>
-        <IconNavbarNavigation>
+    <StyledIconNavbarNavigationsContainer>
+      <StyledIconNavbarNavigations>
+        <StyledIconNavbarNavigation>
           <SearchIcon />
-        </IconNavbarNavigation>
-        <IconNavbarNavigation>
-          <ShoppingCart />
-        </IconNavbarNavigation>
-        <IconNavbarNavigation>
+        </StyledIconNavbarNavigation>
+        <StyledIconNavbarNavigation>
+          <ShoppingCartIcon />
+        </StyledIconNavbarNavigation>
+        <StyledIconNavbarNavigation>
           <PersonIcon />
-        </IconNavbarNavigation>
-      </IconNavbarNavigations>
-    </IconNavbarNavigationsContainer>
+        </StyledIconNavbarNavigation>
+      </StyledIconNavbarNavigations>
+    </StyledIconNavbarNavigationsContainer>
   );
 }

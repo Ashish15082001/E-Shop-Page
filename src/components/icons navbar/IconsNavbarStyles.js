@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
-export const IconNavbarNavigationsContainer = styled.div``;
-export const IconNavbarNavigations = styled.ul`
+export const StyledIconNavbarNavigationsContainer = styled.div``;
+
+export const StyledIconNavbarNavigations = styled.ul`
   list-style: none;
   display: flex;
   padding: 0;
   ${'' /* border: 1px solid red; */}
 `;
-export const IconNavbarNavigation = styled.li`
+
+export const StyledIconNavbarNavigation = styled.li`
   margin-inline: 2rem;
   width: 4rem;
   height: 4rem;
