@@ -1,15 +1,13 @@
 import React from "react";
 import Footer from "../components/footer/Footer";
+import PageBody from "../components/page body/PageBody";
 import PageHeader from "../components/page header/PageHeader";
-import { PageBody } from "./OrderStyles";
 
 export default function Order(props) {
   return (
     <React.Fragment>
       <PageHeader />
-      <PageBody>
-        <h1>Order Page</h1>
-      </PageBody>
+      <PageBody />
       <Footer />
     </React.Fragment>
   );

@@ -23,13 +23,14 @@ export const StyledBackNavigationContainer = styled.div`
 export const StyledBackNavigationIconContainer = styled.span`
   display: grid;
   place-items: center;
+  margin-right: 1rem;
 `;
 
 export const StyledBackNavigationIconText = styled.p`
   font-size: var(--font-medium);
+  font-weight: var(--font-bold);
   color: var(--color-primary-font);
   margin: 0;
 `;
 
 export const StyledButtonContainer = styled.div``;
-

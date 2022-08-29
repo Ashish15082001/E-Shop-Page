@@ -10,6 +10,7 @@ export const StyledNavbarNavigations = styled.ul`
 
 export const StyledNavbarNavigation = styled.li`
   font-size: var(--font-medium);
+  font-weight: var(--font-bold);
   padding: 1rem 2rem;
   margin-inline: 4rem;
   cursor: pointer;
