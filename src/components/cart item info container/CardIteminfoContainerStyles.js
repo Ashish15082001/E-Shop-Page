@@ -13,8 +13,8 @@ export const StyledTitle = styled.p`
 
 export const StyledCardItems = styled.ul`
   padding: 0;
-  height: 23rem;
-  margin: 0
+  height: 20rem;
+  margin: 0;
   margin-bottom: 2rem;
 `;
 
@@ -24,7 +24,7 @@ export const StyledTotalAmountContainer = styled.div`
   padding: 2rem 4rem;
   background-color: var(--color-faded-background);
   border-radius: 3rem;
-  width: 20rem;
+  width: 80%;
   margin-inline: auto;
 `;
 
