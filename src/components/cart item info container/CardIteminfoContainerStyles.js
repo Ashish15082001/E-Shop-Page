@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const StyledCardItemInfoContainer = styled.div`
-  color: red;
+  width: 100%;
+  max-width: 50rem;
+  margin-inline: auto;
 `;
 
 export const StyledTitle = styled.p`

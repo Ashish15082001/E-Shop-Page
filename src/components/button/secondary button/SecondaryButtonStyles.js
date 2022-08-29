@@ -16,4 +16,8 @@ export const StyledSecondaryButton = styled.button`
     color: var(--color-primary-font);
     border: 0.2rem solid var(--color-primary-font);
   }
+  
+  @media (max-width: 600px) {
+    padding: 1.5rem 2rem;
+  }
 `;

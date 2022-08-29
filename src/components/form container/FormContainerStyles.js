@@ -4,9 +4,15 @@ export const StyledFormContainer = styled.div`
   padding: 0 6rem;
   max-width: 80rem;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1400px) {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+
+  @media (max-width: 810px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 0 2rem;
   }
 `;
 
@@ -40,4 +46,8 @@ export const StyledInputContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   margin-top: 2rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;

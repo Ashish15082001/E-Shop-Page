@@ -16,4 +16,8 @@ export const StyledPrimaryButton = styled.button`
     background-color: var(--color-primary-dark);
     border: 0.2rem solid var(--color-primary-dark);
   }
+
+  @media (max-width: 600px) {
+    padding: 1.5rem 2rem;
+  }
 `;

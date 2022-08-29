@@ -6,7 +6,10 @@ export const StyledIconNavbarNavigations = styled.ul`
   list-style: none;
   display: flex;
   padding: 0;
-  ${'' /* border: 1px solid red; */}
+
+  @media (max-width: 810px) {
+    display: none;
+  }
 `;
 
 export const StyledIconNavbarNavigation = styled.li`
@@ -23,5 +26,9 @@ export const StyledIconNavbarNavigation = styled.li`
   &:hover {
     background-color: var(--color-primary);
     color: var(--color-secondary);
+  }
+
+  @media (max-width: 810px) {
+    margin-inline: 0.5rem;
   }
 `;

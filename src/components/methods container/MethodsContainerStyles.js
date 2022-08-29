@@ -2,9 +2,16 @@ import styled from "styled-components";
 
 export const StyledMethodsContainer = styled.div`
   padding: 0 6rem;
+
+  @media (max-width: 810px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const StyledMethodsOptionsContainer = styled.div`
+  max-width: 50rem;
+  margin-inline: auto;
+
   &:first-child {
     margin-top: 15rem;
   }

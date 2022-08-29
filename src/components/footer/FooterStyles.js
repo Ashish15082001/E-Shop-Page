@@ -5,6 +5,10 @@ export const StyledOrderPageFooter = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem 3rem 3rem;
+
+  @media (max-width: 810px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledBackNavigationContainer = styled.div`
@@ -33,4 +37,16 @@ export const StyledBackNavigationIconText = styled.p`
   margin: 0;
 `;
 
-export const StyledButtonContainer = styled.div``;
+export const StyledButtonContainer = styled.div`
+  @media (max-width: 810px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  & > button:first-child {
+    margin-bottom: 2rem;
+  }
+`;

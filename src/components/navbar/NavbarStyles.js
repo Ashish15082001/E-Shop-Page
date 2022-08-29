@@ -6,6 +6,10 @@ export const StyledNavbarNavigations = styled.ul`
   list-style: none;
   display: flex;
   padding: 0;
+
+  @media (max-width: 810px) {
+    display: none;
+  }
 `;
 
 export const StyledNavbarNavigation = styled.li`
@@ -20,5 +24,12 @@ export const StyledNavbarNavigation = styled.li`
 
   &:hover {
     background-color: var(--color-primary);
+  }
+
+  @media (max-width: 1400px) {
+    margin-inline: 1rem;
+  }
+  @media (max-width: 810px) {
+    margin-inline: 0.5rem;
   }
 `;

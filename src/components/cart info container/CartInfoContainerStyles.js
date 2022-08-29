@@ -4,10 +4,14 @@ export const StyledCartInfoContainer = styled.div`
   display: grid;
   grid-template-rows: 15rem 1fr 15rem;
   padding: 0 6rem;
+
+  @media (max-width: 810px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const StyledCartInfoContainerTop = styled.div`
-  ${'' /* background-color: orange; */}
+  ${"" /* background-color: orange; */}
 `;
 
 export const StyledCartInfoContainerBottom = styled.div`

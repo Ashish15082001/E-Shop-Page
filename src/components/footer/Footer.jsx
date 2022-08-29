@@ -9,22 +9,22 @@ import {
   StyledOrderPageFooter,
 } from "./FooterStyles";
 import { useSelector } from "react-redux";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 
 export default function Footer() {
   const shippingDetails = useSelector((store) => store.shippingDetails);
 
   function onProceedToPayment() {
-    if (shippingDetails.email === "")
-      toast.error("🦄 Wow so easy!", {
-        position: "bottom-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
+    if (shippingDetails.email === "");
+    // toast.error("🦄 Wow so easy!", {
+    //   position: "bottom-center",
+    //   autoClose: 5000,
+    //   hideProgressBar: false,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   progress: undefined,
+    // });
   }
 
   return (
