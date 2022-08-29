@@ -16,19 +16,19 @@ body {
 :root {
   font-size: 10px;
 
-  --color-secondary: rgb(251, 255, 253);
+  --color-secondary: rgb(255, 255, 255);
   --color-secondary-dark: rgb(240, 240, 240);
   --color-primary: rgb(120, 218, 166);
   --color-primary-dark: rgb(86, 177, 128);
   --color-border-grey: rgb(219, 219, 219);
 
   --color-primary-font: rgb(61, 61, 61);
-  --color-faded-font: rgb(104, 104, 104);
+  --color-faded-font: rgb(197, 197, 197);
   --color-faded-background: rgb(234, 234, 234);
 
   --color-black: black;
 
-  --font-large: 2rem;
+  --font-large: 2.4rem;
   --font-medium: 1.8rem;
   --font-small: 1.2rem;
 

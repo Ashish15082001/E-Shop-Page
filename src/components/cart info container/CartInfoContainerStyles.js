@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledCartInfoContainer = styled.div`
   display: grid;
   grid-template-rows: 15rem 1fr 15rem;
-  padding: 0 5rem;
+  padding: 0 6rem;
 `;
 
 export const StyledCartInfoContainerTop = styled.div`

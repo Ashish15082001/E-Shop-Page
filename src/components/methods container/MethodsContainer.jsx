@@ -1,3 +1,8 @@
+import MastercardIcon from "../../icons/MastercardIcon";
+import PaypalIcon from "../../icons/PaypalIcon";
+import VisaCard from "../../icons/VisaIcon";
+import MaestroIcon from "../../icons/MaestroIcon";
+import DiscoverIcon from "../../icons/DiscoverIcon";
 import {
   StyledMethodOptions,
   StyledMethodsContainer,
@@ -5,7 +10,9 @@ import {
   StyledMethodsOptionsContainer,
   StyledMethodsOptionsContainerTitle,
   StyledDeliveryMethodOptions,
+  StyledIconContainer,
 } from "./MethodsContainerStyles";
+import IdealIcon from "../../icons/IdealIcon";
 
 export default function MethodsContainer() {
   return (
@@ -15,12 +22,36 @@ export default function MethodsContainer() {
           Payment method
         </StyledMethodsOptionsContainerTitle>
         <StyledMethodOptions>
-          <StyledMethodsOption selected={true}></StyledMethodsOption>
-          <StyledMethodsOption></StyledMethodsOption>
-          <StyledMethodsOption></StyledMethodsOption>
-          <StyledMethodsOption></StyledMethodsOption>
-          <StyledMethodsOption></StyledMethodsOption>
-          <StyledMethodsOption></StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <PaypalIcon />
+            </StyledIconContainer>
+          </StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <VisaCard />
+            </StyledIconContainer>
+          </StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <MastercardIcon />
+            </StyledIconContainer>
+          </StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <MaestroIcon />
+            </StyledIconContainer>
+          </StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <DiscoverIcon />
+            </StyledIconContainer>
+          </StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <IdealIcon />
+            </StyledIconContainer>
+          </StyledMethodsOption>
         </StyledMethodOptions>
       </StyledMethodsOptionsContainer>
       <StyledMethodsOptionsContainer>

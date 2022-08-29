@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledMethodsContainer = styled.div`
-  padding-inline: 3rem;
+  padding: 0 6rem;
 `;
 
 export const StyledMethodsOptionsContainer = styled.div`
@@ -37,8 +37,24 @@ export const StyledDeliveryMethodOptions = styled.ul`
 
 export const StyledMethodsOption = styled.li`
   height: 5rem;
-  background-color: var(--color-primary);
+  border: 0.2rem solid var(--color-faded-font);
   border-radius: 3rem;
   cursor: pointer;
-  ${"" /* opacity:  props => props.selected === true ? 1 : 0.8; */}
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+export const StyledIconContainer = styled.span`
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+
+  & > svg {
+    transform: scale(2);
+  }
 `;
