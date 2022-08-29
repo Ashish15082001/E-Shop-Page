@@ -59,10 +59,26 @@ export default function MethodsContainer() {
           Delivery method
         </StyledMethodsOptionsContainerTitle>
         <StyledDeliveryMethodOptions>
-          <StyledMethodsOption selected={true}></StyledMethodsOption>
-          <StyledMethodsOption></StyledMethodsOption>
-          <StyledMethodsOption></StyledMethodsOption>
-          <StyledMethodsOption></StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <MaestroIcon />
+            </StyledIconContainer>
+          </StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <MaestroIcon />
+            </StyledIconContainer>
+          </StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <MaestroIcon />
+            </StyledIconContainer>
+          </StyledMethodsOption>
+          <StyledMethodsOption>
+            <StyledIconContainer>
+              <MaestroIcon />
+            </StyledIconContainer>
+          </StyledMethodsOption>
         </StyledDeliveryMethodOptions>
       </StyledMethodsOptionsContainer>
     </StyledMethodsContainer>
