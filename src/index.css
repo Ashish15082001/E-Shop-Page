@@ -36,9 +36,6 @@ body {
 }
 
 #root {
-  display: grid;
-  grid-template-rows: 8rem 1fr;
-  min-height: 100vh;
   /* background-color: var(--color-secondary); */
 }
 

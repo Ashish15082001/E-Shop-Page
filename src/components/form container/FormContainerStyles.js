@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const StyledFormContainer = styled.div`
   padding: 0 6rem;
+  max-width: 80rem;
+
+  @media (max-width: 1300px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 `;
 
 export const StyledButtonContainer = styled.div`
