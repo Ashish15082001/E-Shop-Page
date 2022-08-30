@@ -3,8 +3,8 @@
 
 # technology used
 
-> HTML5
-> CSS3
-> Javascript(ES6+)
-> ReactJs
-> Redux
+- HTML5
+- CSS3
+- Javascript(ES6+)
+- ReactJs
+- Redux
