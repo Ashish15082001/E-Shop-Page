@@ -34,6 +34,8 @@ export const StyledMethodsOption = styled.li`
   border-radius: 3rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
 
   opacity: ${(props) => (props["data-choosen"] ? 1 : 0.4)};
 
@@ -45,10 +47,15 @@ export const StyledMethodsOption = styled.li`
 export const StyledIconContainer = styled.span`
   display: grid;
   place-items: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
 
   & > svg {
     transform: scale(2);
   }
+`;
+
+export const StyledIconText = styled.p`
+  color: var(--color-primary-font);
+  font-size: var(--font-medium);
 `;

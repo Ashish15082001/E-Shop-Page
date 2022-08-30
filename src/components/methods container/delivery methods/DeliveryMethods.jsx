@@ -5,6 +5,7 @@ import { setDeliveryMethod } from "../../../redux/slice/shippingDetailsSlice";
 import {
   StyledDeliveryMethodOptions,
   StyledIconContainer,
+  StyledIconText,
   StyledMethodsOption,
   StyledMethodsOptionsContainer,
   StyledMethodsOptionsContainerTitle,
@@ -39,10 +40,13 @@ export default function DeliveryMethods() {
           <StyledIconContainer>
             <MaestroIcon />
           </StyledIconContainer>
+          <StyledIconText>$20.00</StyledIconText>
         </StyledMethodsOption>
         <StyledMethodsOption
           onClick={() => {
-            dispatch(setDeliveryMethod({ deliveryMethod: DELIVERY_METHODS.dpd }));
+            dispatch(
+              setDeliveryMethod({ deliveryMethod: DELIVERY_METHODS.dpd })
+            );
             setSelectedDeliveryMethod(DELIVERY_METHODS.dpd);
           }}
           data-choosen={selectedDeliveryMethod === DELIVERY_METHODS.dpd}
@@ -50,10 +54,13 @@ export default function DeliveryMethods() {
           <StyledIconContainer>
             <MaestroIcon />
           </StyledIconContainer>
+          <StyledIconText>$12.00</StyledIconText>
         </StyledMethodsOption>
         <StyledMethodsOption
           onClick={() => {
-            dispatch(setDeliveryMethod({ deliveryMethod: DELIVERY_METHODS.dhl }));
+            dispatch(
+              setDeliveryMethod({ deliveryMethod: DELIVERY_METHODS.dhl })
+            );
             setSelectedDeliveryMethod(DELIVERY_METHODS.dhl);
           }}
           data-choosen={selectedDeliveryMethod === DELIVERY_METHODS.dhl}
@@ -61,6 +68,7 @@ export default function DeliveryMethods() {
           <StyledIconContainer>
             <MaestroIcon />
           </StyledIconContainer>
+          <StyledIconText>$15.00</StyledIconText>
         </StyledMethodsOption>
         <StyledMethodsOption
           onClick={() => {
@@ -74,6 +82,7 @@ export default function DeliveryMethods() {
           <StyledIconContainer>
             <MaestroIcon />
           </StyledIconContainer>
+          <StyledIconText>$10.00</StyledIconText>
         </StyledMethodsOption>
       </StyledDeliveryMethodOptions>
     </StyledMethodsOptionsContainer>
