@@ -1,3 +1,4 @@
+import { useState } from "react";
 import KidIcon from "../../icons/KidIcon";
 import MenIcon from "../../icons/MenIcon";
 import MenuIcon from "../../icons/MenuIcon";
@@ -18,53 +19,59 @@ import {
 } from "./PageHeaderStyles";
 
 export default function PageHeader() {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <StyledHeader>
       <Logo />
       <Navbar />
       <IconsNavbar />
       <StyledMenu>
-        <StyledMenuIconContainer>
+        <StyledMenuIconContainer
+          onClick={() => setShowMenu((oldState) => !oldState)}
+        >
           <MenuIcon />
         </StyledMenuIconContainer>
-        <StyledMenuOptions>
-          <StyledMenuOption>
-            <StyledMenuIconContainer>
-              <MenIcon />
-            </StyledMenuIconContainer>
-            <StyledMenuIconText>Men</StyledMenuIconText>
-          </StyledMenuOption>
-          <StyledMenuOption>
-            <StyledMenuIconContainer>
-              <WomenIcon />
-            </StyledMenuIconContainer>
-            <StyledMenuIconText>Women</StyledMenuIconText>
-          </StyledMenuOption>
-          <StyledMenuOption>
-            <StyledMenuIconContainer>
-              <KidIcon />
-            </StyledMenuIconContainer>
-            <StyledMenuIconText>Kids</StyledMenuIconText>
-          </StyledMenuOption>
-          <StyledMenuOption>
-            <StyledMenuIconContainer>
-              <SearchIcon />
-            </StyledMenuIconContainer>
-            <StyledMenuIconText>Search</StyledMenuIconText>
-          </StyledMenuOption>
-          <StyledMenuOption>
-            <StyledMenuIconContainer>
-              <ShoppingCartIcon />
-            </StyledMenuIconContainer>
-            <StyledMenuIconText>Cart</StyledMenuIconText>
-          </StyledMenuOption>
-          <StyledMenuOption>
-            <StyledMenuIconContainer>
-              <PersonIcon />
-            </StyledMenuIconContainer>
-            <StyledMenuIconText>Account</StyledMenuIconText>
-          </StyledMenuOption>
-        </StyledMenuOptions>
+        {showMenu && (
+          <StyledMenuOptions>
+            <StyledMenuOption>
+              <StyledMenuIconContainer>
+                <MenIcon />
+              </StyledMenuIconContainer>
+              <StyledMenuIconText>Men</StyledMenuIconText>
+            </StyledMenuOption>
+            <StyledMenuOption>
+              <StyledMenuIconContainer>
+                <WomenIcon />
+              </StyledMenuIconContainer>
+              <StyledMenuIconText>Women</StyledMenuIconText>
+            </StyledMenuOption>
+            <StyledMenuOption>
+              <StyledMenuIconContainer>
+                <KidIcon />
+              </StyledMenuIconContainer>
+              <StyledMenuIconText>Kids</StyledMenuIconText>
+            </StyledMenuOption>
+            <StyledMenuOption>
+              <StyledMenuIconContainer>
+                <SearchIcon />
+              </StyledMenuIconContainer>
+              <StyledMenuIconText>Search</StyledMenuIconText>
+            </StyledMenuOption>
+            <StyledMenuOption>
+              <StyledMenuIconContainer>
+                <ShoppingCartIcon />
+              </StyledMenuIconContainer>
+              <StyledMenuIconText>Cart</StyledMenuIconText>
+            </StyledMenuOption>
+            <StyledMenuOption>
+              <StyledMenuIconContainer>
+                <PersonIcon />
+              </StyledMenuIconContainer>
+              <StyledMenuIconText>Account</StyledMenuIconText>
+            </StyledMenuOption>
+          </StyledMenuOptions>
+        )}
       </StyledMenu>
     </StyledHeader>
   );

@@ -24,6 +24,20 @@ export const StyledMenu = styled.div`
 export const StyledMenuIconContainer = styled.span`
   display: grid;
   place-items center;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  display: grid;
+  place-items: center;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
 `;
 
 export const StyledMenuOptions = styled.ul`

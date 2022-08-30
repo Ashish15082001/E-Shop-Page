@@ -15,16 +15,39 @@ export default function Footer() {
   const shippingDetails = useSelector((store) => store.shippingDetails);
 
   function onProceedToPayment() {
-    if (shippingDetails.email === "");
-    // toast.error("🦄 Wow so easy!", {
-    //   position: "bottom-center",
-    //   autoClose: 5000,
-    //   hideProgressBar: false,
-    //   closeOnClick: true,
-    //   pauseOnHover: true,
-    //   draggable: true,
-    //   progress: undefined,
-    // });
+    if (
+      shippingDetails.email === "" ||
+      shippingDetails.address === "" ||
+      shippingDetails.firstName === "" ||
+      shippingDetails.city === "" ||
+      shippingDetails.lastName === "" ||
+      shippingDetails.postalCode === "" ||
+      shippingDetails.phoneNumber === "" ||
+      shippingDetails.country === ""
+    )
+      return alert("Please provide all shipping information.");
+
+    if (
+      isFinite(+shippingDetails.phoneNumber) === false ||
+      shippingDetails.phoneNumber.length !== 10
+    )
+      return alert("Please enter valid phone number.");
+
+    if (
+      isFinite(+shippingDetails.postalCode) === false ||
+      shippingDetails.postalCode.length !== 6
+    )
+      return alert("Please enter valid postal code.");
+
+    if (shippingDetails.paymentMethod === "")
+      return alert("Please select payment method.");
+
+    if (shippingDetails.deliveryMethod === "")
+      return alert("Please select delivery method.");
+
+    return window.confirm(
+      "Shipping information has been succesfully updated. Do you want to go to payment page?"
+    );
   }
 
   return (
